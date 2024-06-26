@@ -1,0 +1,91 @@
+:root {    
+    
+    --color-dark-01: hsl(0, 0%, 52%)
+    --color-dark-02: hsl(209, 23%, 22%);
+    --color-dark-03: hsl(207, 26%, 17%);
+    --color-dark-04:hsl(200, 15%, 8%);
+    
+    --color-white-01: hsl(0, 0%, 100%)
+    --color-white-02: hsl(0, 0%, 98%)
+  }
+  
+  /*
+    Josh Comeau's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+  */
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: light-dark(rgb(235, 235, 235), #304554);
+ 
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  
+  ul,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    text-indent: 0;
+  }
+  
+  .light {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+
+  

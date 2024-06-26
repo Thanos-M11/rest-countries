@@ -1,0 +1,39 @@
+.countryList {
+  width: 310px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+
+.countryList a {
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .countryList {
+    margin: 0 auto;
+    width: 95%;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    column-gap: 7em;
+    row-gap: 6em;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .countryList {
+    /* margin: 0 auto; */
+    /* width: 95%; */
+    /* padding: 2em; */
+    /* display: grid; */
+    grid-template-columns: repeat(4, 310px);
+    /* column-gap: 7em; */
+    /* row-gap: 6em; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+  }
+}

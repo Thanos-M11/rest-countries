@@ -1,0 +1,17 @@
+.header {
+  font-size: 1.7rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 3em;
+  height: 5em;
+  background-color: light-dark(#ffffff, #2a2f35);
+  color: light-dark(#222528, #ffffff);
+}
+
+@media (min-width: 769px) {
+  .header {
+    height: 2.5em;
+  }
+}

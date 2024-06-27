@@ -3,10 +3,10 @@ import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <p>Where in the world?</p>
       <ModeIcons />
-    </div>
+    </header>
   );
 }
 

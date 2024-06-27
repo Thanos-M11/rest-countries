@@ -31,9 +31,7 @@ function CountryList() {
       <ul className={styles.countryList}>
         {isLoading && <Loader />}
         {filteredCountries.map((item) => (
-          <Link to={`/countries/${item.cca3.toLowerCase()}`} key={item.cca3}>
-            <CountryItem country={item} />
-          </Link>
+          <CountryItem country={item} key={item.cca3} />
         ))}
       </ul>
     </>

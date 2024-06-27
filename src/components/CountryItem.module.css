@@ -2,6 +2,11 @@
   background-color: light-dark(#ffffff, #2a2f35);
   color: light-dark(#222528, #ffffff);
   border-radius: 0.7em;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .imgContainer {

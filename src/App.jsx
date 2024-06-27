@@ -2,7 +2,6 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Applayout from "./components/Applayout";
 import { CountriesProvider } from "./context/CountriesContext";
 import CountryList from "./components/CountryList";
-// import CountryItem from "./components/CountryItem";
 import CountryDetails from "./components/CountryDetails";
 import PageNotFound from "./components/PageNotFound";
 

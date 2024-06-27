@@ -24,9 +24,6 @@
   }
 }
 
-.btn img {
-}
-
 .btnDescription {
   margin-left: 0.5em;
   font-size: 1.2rem;
@@ -34,40 +31,16 @@
 }
 
 .detailsContainer {
-  width: 350px;
+  width: 80vw;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-@media (min-width: 769px) {
-  .detailsContainer {
-    width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 350px 350px;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-}
-
-@media (min-width: 1200px) {
-  .detailsContainer {
-    column-gap: 3em;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 3em;
+  row-gap: 3em;
 }
 
 .asideImg {
-  width: 350px;
-  height: calc(350px / 1.4);
-}
-
-@media (min-width: 769px) {
-  .asideImg {
-    width: 500px;
-    height: calc(500px / 1.4);
-  }
+  object-fit: cover;
 }
 
 .asideImg img {
@@ -82,12 +55,6 @@
   justify-content: center;
 }
 
-@media (min-width: 796px) {
-  .asideInfo {
-    height: calc(350px / 1.4);
-  }
-}
-
 .countryName {
   font-size: 3rem;
   font-weight: 600;
@@ -100,17 +67,6 @@
 
 .infoList :nth-child(5) {
   margin-bottom: 1em;
-}
-
-@media (min-width: 769px) {
-  .infoList {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: repeat(5, auto);
-    grid-auto-flow: column;
-    column-gap: 2em;
-    row-gap: 0.5em;
-  }
 }
 
 .infoItem {
@@ -128,21 +84,11 @@
 }
 
 .borderCountries {
-  margin-top: 3em;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   gap: 1em;
   align-items: top;
-}
-
-@media (min-width: 769px) {
-  .borderCountries {
-    margin-top: 3em;
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    align-items: top;
-  }
 }
 
 .borderHeading {
@@ -177,4 +123,53 @@
 }
 
 @media (min-width: 769px) {
+  .detailsContainer {
+    column-gap: 3em;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: top;
+  }
+
+  .asideImg {
+    width: 350px;
+    height: calc(350px / 1.4);
+  }
+
+  .infoList {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    column-gap: 2em;
+    row-gap: 0.5em;
+  }
+
+  .borderCountries {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: top;
+  }
+}
+
+@media (min-width: 1200px) {
+  .detailsContainer {
+    column-gap: 3em;
+  }
+  .asideImg {
+    width: 500px;
+    height: calc(500px / 1.4);
+  }
+  .asideInfo {
+    height: calc(500px / 1.4);
+  }
+
+  .borderCountries {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: top;
+  }
 }

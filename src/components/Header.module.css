@@ -8,6 +8,7 @@
   height: 5em;
   background-color: light-dark(#ffffff, #2a2f35);
   color: light-dark(#222528, #ffffff);
+  width: 100vw;
 }
 
 @media (min-width: 769px) {

@@ -1,7 +1,7 @@
 {
-  "homepage": "https://Thanos-M11.github.io/rest-countries",
+  "homepage": "https://thanos-M11.github.io/rest-countries",
   "name": "rest-countries",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
